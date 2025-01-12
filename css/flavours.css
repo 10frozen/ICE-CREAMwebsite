@@ -165,3 +165,69 @@ footer .contact {
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
+
+/* Media Queries */
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+    .ice-cream-item {
+        width: 180px; 
+    }
+}
+
+/* Smaller tablets and large phones */
+@media (max-width: 768px) {
+    nav .right ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .ice-cream-container1, .ice-cream-container2 {
+        justify-content: center;
+    }
+
+    .ice-cream-item {
+        width: 150px;
+    }
+
+    .popular h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+
+    nav .right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .right input[type="text"] {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .ice-cream-container1, .ice-cream-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ice-cream-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .popular h1 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

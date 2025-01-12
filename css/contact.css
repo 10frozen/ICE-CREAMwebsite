@@ -197,3 +197,77 @@ footer .contact {
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .contact {
+        padding: 20px;
+    }
+
+    nav .right ul {
+        gap: 5px;
+    }
+
+    nav .right input[type="text"] {
+        margin-left: 10px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .right ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .right input[type="text"] {
+        margin: 10px 0 0;
+        width: 100%;
+    }
+
+    .contact-detail {
+        padding: 10px;
+    }
+
+    .contact {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+
+    nav .right ul {
+        gap: 0;
+    }
+
+    nav .right ul li {
+        margin: 5px 0;
+    }
+
+    nav .right input[type="text"] {
+        width: 100%;
+    }
+
+    .contact h1 {
+        font-size: 1.2rem;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

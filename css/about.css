@@ -212,3 +212,53 @@ footer .contact {
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .first {
+        padding: 40px 20px;
+    }
+    .messi,
+    .leo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .right ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    nav .right input[type="text"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .messi,
+    .leo {
+        margin: 20px 0;
+    }
+
+    .messi img,
+    .leo img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+    .messi h3, .leo h1 {
+        font-size: 1.5rem;
+    }
+    .messi p, .leo p {
+        font-size: 1rem;
+    }
+}

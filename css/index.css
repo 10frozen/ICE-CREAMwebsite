@@ -267,6 +267,76 @@ footer {
 }
 
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .firstsection {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .firstsection .leftsec {
+        max-width: 100%;
+    }
+
+    .Ice-Cream-container {
+        gap: 15px;
+    }
+
+    .ice-cream-item {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .right ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .right input[type="text"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ice-cream-item {
+        width: 150px;
+    }
+
+    .Popular h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+
+    nav .right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstsection {
+        padding: 10px;
+    }
+
+    .Ice-Cream-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ice-cream-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 
 
